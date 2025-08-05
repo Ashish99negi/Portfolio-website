@@ -4,16 +4,10 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  
-  /* UPDATED: Increased spacing between icons */
   gap: 40px; 
   
   background-color: var(--card-background);
-  
-  /* UPDATED: Increased padding to make the container bigger */
   padding: 20px 40px; 
-  
-  /* UPDATED: Slightly increased border-radius for the new size */
   border-radius: 60px;
   
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -37,6 +31,5 @@
 }
 
 .nav-icon-link .material-icons {
-  /* UPDATED: Increased icon size */
   font-size: 32px;
 }

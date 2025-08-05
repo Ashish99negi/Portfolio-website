@@ -1,7 +1,7 @@
 .skills-container {
   padding: 20px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 15%;
 }
 
 .skills-container h1 {
@@ -29,4 +29,10 @@
 .skill-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+      padding-top: 30%;
+    } 
 }

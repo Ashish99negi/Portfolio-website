@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router'; // Import router directives
-import { NgClass } from '@angular/common'; // Import NgClass for the theme toggle
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { NgClass } from '@angular/common';
 import { ThemeService } from '../../theme.service';
 
 @Component({
   selector: 'app-bottom-nav',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, NgClass], // Declare dependencies
+  imports: [RouterLink, RouterLinkActive, NgClass],
   templateUrl: './bottom-nav.component.html',
   styleUrl: './bottom-nav.component.scss'
 })

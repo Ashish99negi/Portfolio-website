@@ -1,5 +1,5 @@
 <div class="projects-container">
-  <h1>My Projects</h1>
+  <h1 class="text-4xl">My Projects</h1>
   
   <div class="project-card" *ngFor="let project of projects; let i = index" [ngClass]="{'reverse-layout': i % 2 !== 0}">
     <div class="project-image-container">
@@ -8,7 +8,9 @@
     <div class="project-content">
       <h2>{{ project.title }}</h2>
       <p class="SpaceGroteskRegular">{{ project.description }}</p>
-      <a [href]="project.link" target="_blank" class="view-project-button">View project</a>
+      
+      <a *ngIf="project.status === 'complete'" [href]="project.link" target="_blank" class="view-project-button">View project</a>
+      <p *ngIf="project.status === 'incomplete'" class="coming-soon">Not available right now</p>
     </div>
   </div>
 </div>

@@ -67,3 +67,9 @@
 .social-link:hover::after {
   transform: scaleX(1);
 }
+
+@media (max-width:768px) {
+  .home-container {
+    padding-top: 70%;
+  }
+}

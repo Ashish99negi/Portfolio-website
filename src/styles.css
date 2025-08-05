@@ -1,4 +1,4 @@
-/* You can import a font from Google Fonts here */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 @tailwind base;
@@ -6,7 +6,6 @@
 @tailwind utilities;
 
 :root {
-  /* Light theme variables */
   --background-color: #ffffff;
   --text-color: #1a1a1a;
   --primary-color: #007bff;
@@ -16,7 +15,6 @@
 }
 
 body.dark-theme {
-  /* Dark theme variables */
   --background-color: #121212;
   --text-color: #e0e0e0;
   --primary-color: #61dafb;
@@ -39,7 +37,6 @@ a {
   text-decoration: none;
 }
 
-/* Basic container for page content */
 .page-container {
-  padding-bottom: 80px; /* Space for the fixed bottom nav */
+  padding-bottom: 80px;
 }
