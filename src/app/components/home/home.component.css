@@ -1,0 +1,69 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  padding-top: 20%;
+}
+
+.greeting {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: var(--secondary-color);
+}
+
+.name-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.profession {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 600;
+  margin: 0;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--primary-color);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.social-link:hover {
+  color: var(--text-color);
+}
+
+.social-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+.social-link:hover::after {
+  transform: scaleX(1);
+}

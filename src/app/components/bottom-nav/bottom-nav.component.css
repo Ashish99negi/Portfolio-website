@@ -1,0 +1,42 @@
+.bottom-nav-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  
+  /* UPDATED: Increased spacing between icons */
+  gap: 40px; 
+  
+  background-color: var(--card-background);
+  
+  /* UPDATED: Increased padding to make the container bigger */
+  padding: 20px 40px; 
+  
+  /* UPDATED: Slightly increased border-radius for the new size */
+  border-radius: 60px;
+  
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.nav-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-icon-link:hover,
+.nav-icon-link.active {
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.nav-icon-link .material-icons {
+  /* UPDATED: Increased icon size */
+  font-size: 32px;
+}

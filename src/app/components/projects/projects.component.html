@@ -1,0 +1,14 @@
+<div class="projects-container">
+  <h1>My Projects</h1>
+  
+  <div class="project-card" *ngFor="let project of projects; let i = index" [ngClass]="{'reverse-layout': i % 2 !== 0}">
+    <div class="project-image-container">
+      <img [src]="project.imageUrl" [alt]="'Screenshot of ' + project.title" class="project-image">
+    </div>
+    <div class="project-content">
+      <h2>{{ project.title }}</h2>
+      <p class="SpaceGroteskRegular">{{ project.description }}</p>
+      <a [href]="project.link" target="_blank" class="view-project-button">View project</a>
+    </div>
+  </div>
+</div>

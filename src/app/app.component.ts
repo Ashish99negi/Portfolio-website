@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { BottomNavComponent } from './components/bottom-nav/bottom-nav.component';
+import { HeaderComponent } from './components/header/header.component'; // New import
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, BottomNavComponent, HeaderComponent], // Add HeaderComponent here
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'my-portfolio';

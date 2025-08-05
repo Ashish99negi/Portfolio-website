@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can import a font from Google Fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme variables */
+  --background-color: #ffffff;
+  --text-color: #1a1a1a;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --card-background: #f8f9fa;
+  --border-color: #e9ecef;
+}
+
+body.dark-theme {
+  /* Dark theme variables */
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #61dafb;
+  --secondary-color: #9e9e9e;
+  --card-background: #1e1e1e;
+  --border-color: #333333;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Basic container for page content */
+.page-container {
+  padding-bottom: 80px; /* Space for the fixed bottom nav */
+}
