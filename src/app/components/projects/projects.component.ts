@@ -20,7 +20,7 @@ export class ProjectsComponent {
     {
       title: 'Online Resume Builder',
       description: 'An online resume builder developed with Angular, allowing users to easily create, edit, and preview their resumes before downloading a PDF.',
-      link: 'https://resume-builder-61ee.vercel.app/resume-editor',
+      link: 'https://resume-builder-one-lemon.vercel.app/',
       imageUrl: 'assets/images/online-resume-builder.png',
       status: 'complete'
     },

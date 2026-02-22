@@ -1,3 +1,31 @@
-<header class="main-header">
-    <span class="logo">Ashish Negi</span>
+<header class="site-header" [ngClass]="{'scrolled': isScrolled}">
+  <div class="header-inner">
+    <span class="logo" (click)="scrollTo('home')">AN</span>
+
+    <nav class="desktop-nav">
+      <button class="nav-btn" [ngClass]="{'active': activeSection === 'home'}" (click)="scrollTo('home')">Home</button>
+      <button class="nav-btn" [ngClass]="{'active': activeSection === 'skills'}" (click)="scrollTo('skills')">Skills</button>
+      <button class="nav-btn" [ngClass]="{'active': activeSection === 'projects'}" (click)="scrollTo('projects')">Projects</button>
+      <button class="nav-btn" [ngClass]="{'active': activeSection === 'experience'}" (click)="scrollTo('experience')">Experience</button>
+      <button class="icon-btn" (click)="toggleTheme()" title="Toggle theme">
+        <span class="material-icons">{{ isDark ? 'light_mode' : 'dark_mode' }}</span>
+      </button>
+    </nav>
+
+    <div class="mobile-controls">
+      <button class="icon-btn" (click)="toggleTheme()" title="Toggle theme">
+        <span class="material-icons">{{ isDark ? 'light_mode' : 'dark_mode' }}</span>
+      </button>
+      <button class="icon-btn" (click)="toggleMenu()">
+        <span class="material-icons">{{ mobileOpen ? 'close' : 'menu' }}</span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" [ngClass]="{'open': mobileOpen}">
+    <button (click)="scrollTo('home')">Home</button>
+    <button (click)="scrollTo('skills')">Skills</button>
+    <button (click)="scrollTo('projects')">Projects</button>
+    <button (click)="scrollTo('experience')">Experience</button>
+  </nav>
 </header>
