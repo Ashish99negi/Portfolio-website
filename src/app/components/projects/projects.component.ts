@@ -25,19 +25,19 @@ export class ProjectsComponent {
       status: 'complete'
     },
     {
-      title: 'Form Builder',
-      description: 'An interactive form builder built with Angular 17, Tailwind CSS, and Angular Material. This platform features a modern drag-and-drop canvas for visually designing custom forms. It includes a powerful export tool that generates ready-to-use, HTML code for seamless integration into any Angular application..',
+      title: 'Notes PRO',
+      description: 'A modern, responsive note-taking application built with Angular 20, styled using Tailwind CSS and Angular Material components. It offers a clean and intuitive interface for creating, organizing, and managing your notes efficiently. Designed with a component-driven architecture for scalability and a seamless user experience across all devices.',
       link: 'https://online-form-builder.vercel.app/',
-      imageUrl: 'assets/images/form-builder.png',
+      imageUrl: 'assets/images/notes-pro.png',
       status: 'complete'
     },
     
-    {
-      title: 'Journey Planner App',
-      description: 'A responsive and interactive Journey Planner built with Angular 17. This application allows users to create dynamic, multi-stop routes, discover nearby hotels and restaurants, view destination photo galleries for their trip.',
-      link: '#',
-      imageUrl: 'assets/images/coming-soon.png',
-      status: 'incomplete'
-    }
+    // {
+    //   title: 'Journey Planner App',
+    //   description: 'A responsive and interactive Journey Planner built with Angular 17. This application allows users to create dynamic, multi-stop routes, discover nearby hotels and restaurants, view destination photo galleries for their trip.',
+    //   link: '#',
+    //   imageUrl: 'assets/images/coming-soon.png',
+    //   status: 'incomplete'
+    // }
   ];
 }

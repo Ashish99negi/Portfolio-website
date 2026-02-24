@@ -27,30 +27,36 @@ export class HomeComponent {
       title: 'Quiz Maniac',
       description: 'An AI-powered web platform built with Angular 17 and Gemini AI that generates dynamic quizzes on any topic. It features customizable modes like Timed and Survival to provide a personalized, engaging, and secure learning experience.',
       link: 'https://quiz-maniac99.netlify.app/',
+      github: 'https://github.com/Ashish99negi/quiz-app',
       imageUrl: 'assets/images/quiz-app.png',
-      status: 'complete'
+      status: 'complete',
+      tech: ['Angular 17', 'TypeScript', 'Gemini AI', 'Angular Material', 'CSS']
     },
     {
       title: 'Online Resume Builder',
       description: 'An online resume builder developed with Angular, allowing users to easily create, edit, and preview their resumes before downloading a PDF.',
       link: 'https://resume-builder-one-lemon.vercel.app/',
+      github: 'https://github.com/Ashish99negi/resume-builder',
       imageUrl: 'assets/images/online-resume-builder.png',
-      status: 'complete'
+      status: 'complete',
+      tech: ['Angular 17', 'TypeScript', 'Tailwind CSS', 'Angular Material']
     },
     {
-      title: 'Form Builder',
-      description: 'An interactive form builder built with Angular 17, Tailwind CSS, and Angular Material. Features a drag-and-drop canvas for visually designing custom forms and exports ready-to-use HTML code for any Angular application.',
-      link: 'https://online-form-builder.vercel.app/',
-      imageUrl: 'assets/images/form-builder.png',
-      status: 'complete'
+      title: 'Notes PRO',
+      description: 'A modern, responsive note-taking application built with Angular 20, styled using Tailwind CSS and Angular Material components. It offers a clean and intuitive interface for creating, organizing, and managing your notes efficiently. Designed with a component-driven architecture for scalability and a seamless user experience across all devices.',
+      link: 'https://notes-pro-vb4r.vercel.app/',
+      github: 'https://github.com/Ashish99negi/Notes-PRO',
+      imageUrl: 'assets/images/notes-pro.png',
+      status: 'complete',
+      tech: ['Angular 20', 'TypeScript', 'Tailwind CSS', 'Angular Material']
     },
-    {
-      title: 'Journey Planner',
-      description: 'A responsive and interactive Journey Planner built with Angular 17. Allows users to create dynamic multi-stop routes, discover nearby hotels and restaurants, and view destination photo galleries for their trip.',
-      link: '#',
-      imageUrl: 'assets/images/coming-soon.png',
-      status: 'incomplete'
-    }
+    // {
+    //   title: 'Journey Planner',
+    //   description: 'A responsive and interactive Journey Planner built with Angular 17. Allows users to create dynamic multi-stop routes, discover nearby hotels and restaurants, and view destination photo galleries for their trip.',
+    //   link: '#',
+    //   imageUrl: 'assets/images/coming-soon.png',
+    //   status: 'incomplete'
+    // }
   ];
 
   experiences = [
